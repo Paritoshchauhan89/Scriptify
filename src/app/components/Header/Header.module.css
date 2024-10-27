@@ -1,0 +1,44 @@
+.header {
+    position: sticky;
+    background-color: rgba(255, 255, 255, 0.8); /* Light grayish, semi-transparent background */
+    backdrop-filter: blur(10px); /* Creates a glass effect */
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.3); /* Light border */
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   padding: 8px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333333; /* Adjusted to match your desired color */
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navLink {
+    text-decoration: none;
+    color: #333333; /* Adjusted to match your desired color */
+    font-weight: 500;
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+    .navLinks {
+        margin: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 0;
+    }
+}
