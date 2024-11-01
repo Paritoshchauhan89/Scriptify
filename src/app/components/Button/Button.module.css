@@ -8,20 +8,21 @@
   color: #fff;
   font-size: 12px;
   transition: background-color 0.2s ease; /* Add a transition for hover effects */
+  width: max-content;
 }
 
 .primary {
-  background-color: #333333; /* Primary button color */
+  background-color: var(--primary); /* Primary button color */
 }
 
 .primary:hover {
-  background-color: #444444; /* Darker shade on hover */
+  background-color: var(--foreground); /* Darker shade on hover */
 }
 
 .secondary {
-  background-color: #555555; /* Example secondary button color */
+  background-color: var(--background); /* Example secondary button color */
 }
 
 .secondary:hover {
-  background-color: #666666; /* Darker shade on hover for secondary */
+  background-color: var(--background); /* Darker shade on hover for secondary */
 }

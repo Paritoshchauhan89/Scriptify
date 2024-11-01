@@ -1,0 +1,67 @@
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.container h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.subtitle {
+    margin-bottom: 2em;
+    color: #666;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.serviceCard {
+    background-color: #eaeaea;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+}
+
+.serviceCard h2 {
+    font-size: 1.2em;
+    margin: 1em 0 0.5em;
+}
+
+.serviceCard p {
+    color: #666;
+    margin-bottom: 1.5em;
+}
+
+.serviceCard img {
+    width: 50%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1em;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .services {
+        grid-template-columns: 1fr;
+    }
+}

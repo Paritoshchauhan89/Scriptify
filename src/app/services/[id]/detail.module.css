@@ -1,0 +1,130 @@
+  /* Wide Banner Styling */
+  .banner {
+    background-color: #4a90e2;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .banner p {
+    font-size: 1.2rem;
+  }
+  
+  /* Scrollspy Layout */
+  .scrollspyContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .mainContent {
+    flex: 1;
+    padding: 30px;
+    margin: 20px; /* Added margin for spacing */
+    background: #fff; /* White background for main content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .contentSection {
+    padding: 50px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .contentSection h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333; /* Darker color for headings */
+  }
+  
+  .contentSection p {
+    font-size: 1rem;
+    color: #666; /* Softer text color for paragraphs */
+  }
+  
+  .benefit {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    background-color: #f0f8ff; /* Light background for benefits */
+    padding: 10px;
+    border-left: 4px solid #4a90e2; /* Highlight color */
+    border-radius: 4px; /* Rounded corners for benefit box */
+  }
+  
+  .benefit img {
+    width: 24px; /* Icon size */
+    height: 24px; /* Icon size */
+    margin-right: 10px; /* Space between icon and text */
+  }
+  
+  .stickySidebar {
+    position: sticky;
+    top: 0;
+    width: 300px;
+    background: #f4f4f4;
+    padding: 20px;
+    height: 100vh;
+    border-radius: 8px; /* Rounded corners for sidebar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .stickySidebar ul {
+    list-style: none;
+  }
+  
+  .stickySidebar li {
+    margin-bottom: 15px;
+  }
+  
+  .stickySidebar a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .active,
+  .stickySidebar a:hover {
+    color: #4a90e2;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .scrollspyContainer {
+      flex-direction: column;
+    }
+  
+    .stickySidebar {
+      width: 100%;
+      height: auto; /* Allow sidebar to fit content */
+    }
+  
+    .banner h1 {
+      font-size: 2rem; /* Adjust font size */
+    }
+  
+    .banner p {
+      font-size: 1rem; /* Adjust font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .banner {
+      padding: 50px 10px; /* Reduce padding for small screens */
+    }
+  
+    .contentSection {
+      padding: 30px 0; /* Reduce padding for sections */
+    }
+  
+    .stickySidebar {
+      position: static; /* Remove sticky on very small screens */
+      height: auto; /* Allow sidebar to fit content */
+    }
+  }
+  

@@ -1,16 +1,117 @@
-.container {
-    padding: 20px;
-    text-align: center;
-    background-color: #f9f9f9; /* Light background */
+/* Home.module.css */
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.hero h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #333333; /* Make sure you define --primary-color somewhere in your global styles */
+}
+
+.hero p {
+  font-size: 16px;
+  color: #666;
+}
+
+.heroImage {
+  margin-top: 20px; /* Adjust margin for the image */
+}
+
+.heroImage img {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+@media (max-width: 768px) {
+  .hero {
+      padding: 30px 10px; /* Adjust padding for smaller screens */
   }
-  
-  h1 {
-    font-size: 36px;
-    color: #333; /* Dark text */
+
+  .hero h1 {
+      font-size: 28px; /* Smaller font size for smaller screens */
   }
-  
-  p {
-    font-size: 18px;
-    color: #666; /* Grey text */
+
+  .hero p {
+      font-size: 16px; /* Smaller font size for smaller screens */
   }
-  
+
+  .features {
+      font-size: 24px; /* Smaller font size for features heading */
+  }
+}
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 16px;
+}
+
+.paragraph {
+  font-size: 1.125rem;
+  margin-bottom: 24px;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: center; /* Center the flex items horizontally */
+  align-items: flex-start; /* Align items to the top */
+  margin-bottom: 24px;
+  padding: 20px; /* Add padding around each section */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.textContainer {
+  flex: 0 0 60%; /* Set content container to 60% */
+  padding: 16px;
+  text-align: center; /* Center text inside the container */
+}
+
+.imageContainer {
+  flex: 0 0 30%; /* Set image container to 30% */
+  padding: 16px;
+}
+
+.image {
+  border-radius: 8px;
+  max-width: 100%; /* Ensure image does not exceed container width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.75rem; /* Adjust heading size for smaller screens */
+  }
+
+  .paragraph {
+    font-size: 1rem; /* Adjust paragraph size for smaller screens */
+  }
+
+  .flexContainer {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .textContainer {
+    flex: 0 0 100%; /* Set content container to full width */
+    order: 2; /* Ensure text appears below the image */
+  }
+
+  .imageContainer {
+    flex: 0 0 100%; /* Set image container to full width */
+    order: 1; /* Ensure image appears above the text */
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.5rem; /* Further adjust heading size for extra small screens */
+  }
+
+  .paragraph {
+    font-size: 0.875rem; /* Further adjust paragraph size for extra small screens */
+  }
+}
+

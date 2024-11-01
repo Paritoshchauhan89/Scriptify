@@ -1,9 +1,11 @@
+// app/layout.js (server layout)
+
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "./components/Header/Header";
+import RootLayoutClient from "./RootLayoutClient"; // Import a client layout if needed
 
 const merriweather = localFont({
-  src: "./fonts/Merriweather-Regular.ttf", 
+  src: "./fonts/Merriweather-Regular.ttf",
   variable: "--font-merriweather",
   weight: "400",
 });
@@ -17,8 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${merriweather.variable}`}>
-        <Header /> 
-        {children}
+        <RootLayoutClient>{children}</RootLayoutClient>
       </body>
     </html>
   );

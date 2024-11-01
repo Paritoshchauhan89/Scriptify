@@ -1,7 +1,11 @@
+"use client";
+
 import React from "react";
 import Link from "next/link"; // Import Link from Next.js
 import Button from "../Button/Button"; // Import your reusable Button component
 import styles from './Header.module.css'; // Import the CSS module for styling
+  // Client-only code
+
 
 const Header = () => {
   return (
@@ -16,7 +20,7 @@ const Header = () => {
           </li>
           <li>
             <Link href="/about" className={styles.navLink}>
-              About Us
+              About
             </Link>
           </li>
           <li>
@@ -36,8 +40,8 @@ const Header = () => {
           </li>
         </ul>
         <div className="flex space-x-2">
-          <Button className="bg-blue-500 hover:bg-blue-700">Sign Up</Button>
-          <Button className="bg-gray-600 hover:bg-gray-700">Log In</Button>
+          <Button>Sign Up</Button>
+          <Button>Log In</Button>
         </div>
       </nav>
     </header>

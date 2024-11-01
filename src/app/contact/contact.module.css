@@ -1,0 +1,129 @@
+.contactmaincontainer {
+    margin: auto;
+    justify-content: center;
+    padding: 20px; /* Add padding for mobile devices */
+}
+
+.contactContainer {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap in smaller screens */
+}
+
+.leftSide {
+    flex: 1;
+}
+
+.contactImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.rightSide {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightSide h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contactForm label {
+    font-size: 1em;
+    font-weight: 600;
+    color: #555;
+}
+
+.contactForm input,
+.contactForm textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contactForm button {
+    padding: 12px;
+    font-size: 1em;
+    color: #fff;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contactForm button:hover {
+    background-color: var(--foreground);
+}
+
+.contactInfo {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap in smaller screens */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    margin: 10px; /* Add margin for spacing between cards */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #555;
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contactContainer {
+        flex-direction: column; /* Stack items vertically */
+        padding: 20px; /* Reduce padding for mobile */
+    }
+
+    .contactInfo {
+        flex-direction: column; /* Stack contact info cards vertically */
+        align-items: center; /* Center align cards */
+    }
+
+    .card {
+        width: 100%; /* Make cards full width on mobile */
+        max-width: 300px; /* Maintain max width */
+    }
+}

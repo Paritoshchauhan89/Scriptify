@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #001f3f;
+  --primary: #333333;
 }
 * {
   box-sizing: border-box;
