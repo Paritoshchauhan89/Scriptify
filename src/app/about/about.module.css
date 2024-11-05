@@ -76,8 +76,8 @@
 
 .image {
   border-radius: 8px;
-  max-width: 100%; /* Ensure image does not exceed container width */
   height: auto; /* Maintain aspect ratio */
+  width: auto;
 }
 
 /* Media Queries for Responsiveness */

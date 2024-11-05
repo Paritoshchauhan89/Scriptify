@@ -7,7 +7,7 @@ import Footer from "./components/Footer/Footer";
 
 export default function RootLayoutClient({ children }) {
   const pathname = usePathname();
-  const isDashboard = ['/dashboard/admin', '/dashboard/manager', '/dashboard/user'].includes(pathname);
+  const isDashboard = ['/dashboard/admin', '/dashboard/manager', '/dashboard/user', '/register'].includes(pathname);
     
   return (
     <>

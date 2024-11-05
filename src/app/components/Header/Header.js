@@ -40,7 +40,7 @@ const Header = () => {
           </li>
         </ul>
         <div className="flex space-x-2">
-          <Button>Sign Up</Button>
+          <Link href='/register'> <Button>Sign Up</Button></Link>
           <Button>Log In</Button>
         </div>
       </nav>

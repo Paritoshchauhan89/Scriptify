@@ -20,7 +20,7 @@ const About = () => {
         <meta property="og:description" content="Learn more about our mission, values, and team on our About page." />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://img.freepik.com/free-vector/reserved-lettering-with-ornament_1262-7402.jpg?t=st=1730485832~exp=1730489432~hmac=f2b7bf4d227ded43a9f6ee553b526630fa7cc0c19684a04257823accef455725&w=900" />
-        <meta property="og:url" content="https://yourwebsite.com/about" />
+        <meta property="og:url" content="https://scriptifyy.netlify.app/about" />
 
         {/* Twitter Card Tags for Social Sharing on Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -29,7 +29,7 @@ const About = () => {
         <meta name="twitter:image" content="https://img.freepik.com/free-vector/reserved-lettering-with-ornament_1262-7402.jpg?t=st=1730485832~exp=1730489432~hmac=f2b7bf4d227ded43a9f6ee553b526630fa7cc0c19684a04257823accef455725&w=900" />
 
         {/* Canonical URL for SEO */}
-        <link rel="canonical" href="https://yourwebsite.com/about" />
+        <link rel="canonical" href="https://scriptifyy.netlify.app/about" />
       </Head>
       <section className={styles.hero}>
         <h1>About Us</h1>

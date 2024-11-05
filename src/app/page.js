@@ -58,6 +58,7 @@ const Page = () => {
                         width={500} // Desired width
                         height={400} // Desired height
                         style={{ width: 'auto', height: 'auto' }}
+                        priority
                     />
                 </div>
                 <div className={styles.featuresSection}>
