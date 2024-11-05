@@ -3,8 +3,10 @@ import { useState } from 'react';
 import Head from 'next/head';
 import DashboardStyles from '@/app/dashboard/styles/dashboard.module.css';
 import UserSidebar from '@/app/components/Sidebar/User/UserSidebar';
+import Image from "next/image";
 
-const page = () => {
+
+const Page = () => {
   const [imageSrc, setImageSrc] = useState(null);
   const [notificationsEnabled, setNotificationsEnabled] = useState(false);
   const [theme, setTheme] = useState('light');
@@ -67,7 +69,7 @@ const page = () => {
                   onClick={() => document.getElementById('file-input').click()}
                 >
                   {imageSrc ? (
-                    <img src={imageSrc} alt="Profile" />
+                    <Image src={imageSrc} alt="Profile" />
                   ) : (
                     <span>+</span>
                   )}
@@ -181,4 +183,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

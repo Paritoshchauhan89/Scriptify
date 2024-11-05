@@ -1,9 +1,9 @@
-// pages/DetailPage.js
 "use client";
-import styles from './detail.module.css';
 import { useEffect } from 'react';
+import Image from "next/image";
+import styles from './detail.module.css';
 
-const page = () => {
+const DetailPage = () => {  // Renamed component to start with uppercase
   useEffect(() => {
     const sections = document.querySelectorAll('.content-section');
     const navLinks = document.querySelectorAll('#sidebar-nav a');
@@ -54,38 +54,10 @@ const page = () => {
           <section id="section2" className={styles.contentSection}>
             <h2>Features</h2>
             <div className={styles.benefit}>
-              <img src="https://img.freepik.com/free-psd/realistic-star-isolated_23-2151547714.jpg" alt="Gold Star" />
+              <Image src="https://img.freepik.com/free-psd/realistic-star-isolated_23-2151547714.jpg" alt="Gold Star" width={50} height={50} />
               <p>Advanced plagiarism detection with real-time analysis.</p>
             </div>
             {/* Add more benefits here */}
-          </section>
-          {/* More sections... */}
-          <section id="section4" className={styles.contentSection}>
-            <h2>Pricing</h2>
-            <p>Choose the best plan for your needs:</p>
-            <ul>
-              <li><strong>Basic Plan:</strong> $9.99/month - Access to all basic features.</li>
-              <li><strong>Pro Plan:</strong> $19.99/month - Includes advanced features and priority support.</li>
-              <li><strong>Enterprise Plan:</strong> Custom pricing - Tailored solutions for organizations.</li>
-            </ul>
-          </section>
-          <section id="section4" className={styles.contentSection}>
-            <h2>Pricing</h2>
-            <p>Choose the best plan for your needs:</p>
-            <ul>
-              <li><strong>Basic Plan:</strong> $9.99/month - Access to all basic features.</li>
-              <li><strong>Pro Plan:</strong> $19.99/month - Includes advanced features and priority support.</li>
-              <li><strong>Enterprise Plan:</strong> Custom pricing - Tailored solutions for organizations.</li>
-            </ul>
-          </section>
-          <section id="section4" className={styles.contentSection}>
-            <h2>Pricing</h2>
-            <p>Choose the best plan for your needs:</p>
-            <ul>
-              <li><strong>Basic Plan:</strong> $9.99/month - Access to all basic features.</li>
-              <li><strong>Pro Plan:</strong> $19.99/month - Includes advanced features and priority support.</li>
-              <li><strong>Enterprise Plan:</strong> Custom pricing - Tailored solutions for organizations.</li>
-            </ul>
           </section>
           <section id="section4" className={styles.contentSection}>
             <h2>Pricing</h2>
@@ -112,4 +84,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default DetailPage; // Updated export statement with uppercase name

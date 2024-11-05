@@ -1,10 +1,12 @@
 "use client";
-import ManagerSidebar from '@/app/components/Sidebar/Manager/ManagerSidebar';
 import { useState } from 'react';
 import Head from 'next/head';
 import DashboardStyles from '@/app/dashboard/styles/dashboard.module.css';
+import UserSidebar from '@/app/components/Sidebar/User/UserSidebar';
+import Image from "next/image";
 
-const page = () => {
+const Page = () => {
+  
   const [imageSrc, setImageSrc] = useState(null);
   const [notificationsEnabled, setNotificationsEnabled] = useState(false);
   const [theme, setTheme] = useState('light');
@@ -53,7 +55,7 @@ const page = () => {
         </div>
       </header>
       <div className={DashboardStyles.container}>
-        <ManagerSidebar/>
+        <UserSidebar />
 
         {/* Main Content */}
         <main className={DashboardStyles.mainContent}>
@@ -67,7 +69,7 @@ const page = () => {
                   onClick={() => document.getElementById('file-input').click()}
                 >
                   {imageSrc ? (
-                    <img src={imageSrc} alt="Profile" />
+                    <Image src={imageSrc} alt="Profile" />
                   ) : (
                     <span>+</span>
                   )}
@@ -161,24 +163,22 @@ const page = () => {
             <button className={DashboardStyles.button}>Update Payment</button>
           </section>
         </main>
-        
-
       </div>
       <footer className={DashboardStyles.footer}>
-          <div>
-            <strong>Customer Support</strong><br />
-            Email: <a href="mailto:support@scriptify.com">support@scriptify.com</a><br />
-            Phone: 123-456-7890
-          </div>
-          <div>
-            <strong>Company Info</strong><br />
-            <a href="#">About Us</a><br />
-            <a href="#">Careers</a><br />
-            <a href="#">Privacy Policy</a>
-          </div>
-        </footer>
+        <div>
+          <strong>Customer Support</strong><br />
+          Email: <a href="mailto:support@scriptify.com">support@scriptify.com</a><br />
+          Phone: 123-456-7890
+        </div>
+        <div>
+          <strong>Company Info</strong><br />
+          <a href="#">About Us</a><br />
+          <a href="#">Careers</a><br />
+          <a href="#">Privacy Policy</a>
+        </div>
+      </footer>
     </>
   );
 };
 
-export default page;
+export default Page;

@@ -1,6 +1,8 @@
 // pages/contact.js
 import styles from './contact.module.css';
 import { FaMapMarkerAlt, FaEnvelope, FaWhatsapp } from 'react-icons/fa'; // Import icons from react-icons
+import Image from 'next/image';
+
 
 export default function Contact() {
   return (
@@ -8,9 +10,12 @@ export default function Contact() {
    <div className={styles.contactmaincontainer}>
      <div className={styles.contactContainer}>
       <div className={styles.leftSide}>
-        <img
+        <Image
           src="/Images/Contact.png" // Replace with your image path
           alt="Contact Us"
+          width={400}
+          height={400}
+          priority
           className={styles.contactImage}
         />
       </div>

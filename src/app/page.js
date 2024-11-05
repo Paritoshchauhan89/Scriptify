@@ -65,7 +65,7 @@ const Page = () => {
                     <h2 className={styles.sectionTitle}>Key Features</h2>
                     <div className={styles.featuresGrid}>
                         <div className={styles.featureCard}>
-                            <img src="/Images/Collaborative Writing.png" alt="Collaborative Writing Icon" className={styles.featureIcon} />
+                            <Image src="/Images/Collaborative Writing.png" alt="Collaborative Writing Icon" className={styles.featureIcon}  width={100} height={100}/>
                             <h3>Collaborative Writing</h3>
                             <p>Work together with your team in real-time, wherever you are. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             <div className={styles.buttonContainer}>
@@ -74,7 +74,7 @@ const Page = () => {
                             </div>
                         </div>
                         <div className={styles.featureCard}>
-                            <img src="/Images/Advanced Editing Tools.png" alt="Advanced Editing Tools Icon" className={styles.featureIcon} />
+                            <Image src="/Images/Advanced Editing Tools.png" alt="Advanced Editing Tools Icon" className={styles.featureIcon}  width={100} height={100} />
                             <h3>Advanced Editing Tools</h3>
                             <p>Utilize powerful tools to refine your scripts to perfection.</p>
                             <div className={styles.buttonContainer}>
@@ -83,7 +83,7 @@ const Page = () => {
                             </div>
                         </div>
                         <div className={styles.featureCard}>
-                            <img src="/Images/Secure Cloud Storage.png" alt="Secure Cloud Storage Icon" className={styles.featureIcon} />
+                            <Image src="/Images/Secure Cloud Storage.png" alt="Secure Cloud Storage Icon" className={styles.featureIcon}  width={100} height={100}/>
                             <h3>Secure Cloud Storage</h3>
                             <p>Keep your scripts safe and accessible from anywhere.</p>
                             <div className={styles.buttonContainer}>
@@ -92,7 +92,7 @@ const Page = () => {
                             </div>
                         </div>
                         <div className={styles.featureCard}>
-                            <img src="/Images/Secure Cloud Storage.png" alt="Secure Cloud Storage Icon" className={styles.featureIcon} />
+                            <Image src="/Images/Secure Cloud Storage.png" alt="Secure Cloud Storage Icon" className={styles.featureIcon}  width={100} height={100}/>
                             <h3>Secure Cloud Storage</h3>
                             <p>Keep your scripts safe and accessible from anywhere.</p>
                             <div className={styles.buttonContainer}>
@@ -101,7 +101,7 @@ const Page = () => {
                             </div>
                         </div>
                         <div className={styles.featureCard}>
-                            <img src="/Images/Secure Cloud Storage.png" alt="Secure Cloud Storage Icon" className={styles.featureIcon} />
+                            <Image src="/Images/Secure Cloud Storage.png" alt="Secure Cloud Storage Icon" className={styles.featureIcon}  width={100} height={100}/>
                             <h3>Secure Cloud Storage</h3>
                             <p>Keep your scripts safe and accessible from anywhere.</p>
                             <div className={styles.buttonContainer}>

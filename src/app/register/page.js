@@ -1,9 +1,8 @@
-"use client"
-import React from 'react';
+"use client";
+import React, { useEffect } from 'react';
 import styles from './register.module.css'; // Adjust the path as needed
-import { useEffect } from 'react';
 
-const register = () => {
+const Register = () => {  // Renamed component to start with uppercase
     const createBubble = () => {
         const bubble = document.createElement("div");
         bubble.className = styles.bubble;
@@ -26,6 +25,7 @@ const register = () => {
             createBubble();
         }
     }, []);
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         const name = e.target[0].value;
@@ -49,26 +49,26 @@ const register = () => {
 
     return (
         <div className={styles.bubbleBackground} id="bubble-background">
-        <div className={styles.signupContainer}>
-            <div className={styles.signupBox}>
-                <div className={styles.icon}>👤+</div>
-                <h2>Sign up</h2>
-                <form action="#">
-                    <input type="text" placeholder="Name" required />
-                    <input type="email" placeholder="Email" required />
-                    <button type="submit">Sign up</button>
-                    <button type="button" className={styles.loginWithGoogleBtn}>
-                        Sign in with Google
-                    </button>
-                    <button type="button" className={styles.loginWithGoogleBtn} style={{ backgroundColor: '#0066c7' }}>
-                        Sign in with LinkedIn
-                    </button>
-                </form>
-                <p>Already have an account? <a href="#">Log in</a></p>
+            <div className={styles.signupContainer}>
+                <div className={styles.signupBox}>
+                    <div className={styles.icon}>👤+</div>
+                    <h2>Sign up</h2>
+                    <form onSubmit={handleSubmit}> {/* added onSubmit handler here */}
+                        <input type="text" placeholder="Name" required />
+                        <input type="email" placeholder="Email" required />
+                        <button type="submit">Sign up</button>
+                        <button type="button" className={styles.loginWithGoogleBtn}>
+                            Sign in with Google
+                        </button>
+                        <button type="button" className={styles.loginWithGoogleBtn} style={{ backgroundColor: '#0066c7' }}>
+                            Sign in with LinkedIn
+                        </button>
+                    </form>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
             </div>
-        </div>
         </div>
     );
 };
 
-export default register;
+export default Register;  // Updated to export with uppercase

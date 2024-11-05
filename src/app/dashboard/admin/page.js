@@ -4,6 +4,8 @@ import { useState } from 'react';
 import Head from 'next/head';
 import DashboardStyles from '@/app/dashboard/styles/dashboard.module.css';
 import Link from "next/link"; // Import Link from Next.js
+import Image from "next/image";
+
 
 
 const page = () => {
@@ -69,7 +71,7 @@ const page = () => {
                   onClick={() => document.getElementById('file-input').click()}
                 >
                   {imageSrc ? (
-                    <img src={imageSrc} alt="Profile" />
+                    <Image src={imageSrc} alt="Profile" />
                   ) : (
                     <span>+</span>
                   )}
