@@ -54,7 +54,7 @@ const DetailPage = () => {  // Renamed component to start with uppercase
           <section id="section2" className={styles.contentSection}>
             <h2>Features</h2>
             <div className={styles.benefit}>
-              <Image src="https://img.freepik.com/free-psd/realistic-star-isolated_23-2151547714.jpg" alt="Gold Star" width={50} height={50} />
+              <Image src="/Images/Star.avif" alt="Gold Star" width={50} height={50} />
               <p>Advanced plagiarism detection with real-time analysis.</p>
             </div>
             {/* Add more benefits here */}
